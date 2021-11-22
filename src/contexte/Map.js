@@ -1,6 +1,6 @@
 import { createContext , useState,useEffect} from "react";
-import Bars from "../bars.json"
-import GoogleMapReact from 'google-map-react'
+// import Bars from "../bars.json"
+
 
 const mapContext = createContext({})
 
@@ -31,6 +31,8 @@ const MapContextProvider = (props)=>{
     )
   }, [])
 console.log(location);
+
+
     return(
         <MapContextProvider value={value}>
             {props.children}
