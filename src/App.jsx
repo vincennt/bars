@@ -5,7 +5,17 @@ const App=()=>{
 console.log(MapContextProvider);
   return(
     <MapContextProvider>
-   <p>hi</p>
+         {/* <GoogleMapReact
+        bootstrapURLKeys={{ key: "" }}
+        defaultCenter={myPosition}
+        defaultZoom={14}
+      >
+        <Marker
+          lat={myPosition.lat}
+          lng={myPosition.lng}
+        />
+      </GoogleMapReact> */}
+      <p>hello</p>
     </MapContextProvider>
   )
 }

@@ -7,11 +7,11 @@ const mapContext = createContext({})
 const MapContextProvider = (props)=>{
 
     const [location , setLocation] =useState(null)
-    const [bars, setBars]=useState(Bars)
+    // const [bars, setBars]=useState(Bars)
 
     const value={
         location , 
-        bars
+        // bars
     }
     
      useEffect(() => {
@@ -30,8 +30,7 @@ const MapContextProvider = (props)=>{
       }
     )
   }, [])
-
-  
+console.log(location);
     return(
         <MapContextProvider value={value}>
             {props.children}
