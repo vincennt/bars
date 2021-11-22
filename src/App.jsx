@@ -1,11 +1,14 @@
 import { MapContextProvider } from "./contexte/Map"
+import { Map } from "./components/Map";
+import Marker from "./components/Marker";
 // import GoogleMapReact from 'google-map-react'
 
 const App=()=>{
-
 console.log(MapContextProvider);
   return(
     <MapContextProvider>
+      <Map/>
+      
          {/* <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={myPosition}
@@ -16,7 +19,7 @@ console.log(MapContextProvider);
           lng={myPosition.lng}
         />
       </GoogleMapReact> */}
-      <p>hello</p>
+      
     </MapContextProvider>
   )
 }
