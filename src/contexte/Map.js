@@ -27,7 +27,7 @@ const MapContextProvider = (props)=>{
       }
     )
   }, [])
-console.log(bars);
+
 
 
     return(

@@ -12,16 +12,16 @@ const PinContainer = styled.div`
 
 const Marker =()=>{
     const BarData=useContext(MapContext)
+    console.log(BarData);
 return(
     <>
     {BarData.bars.map(bar=>
-        
         <FaMapMarkerAlt 
-        lat= {bar.latitude}
-        lng={bar.longitude} 
+        lat= {bar.location}
+        lng={bar.location} 
         bar={bar.adress}
         key={bar.created_at}
-        style={{ width: '40px', height: '40px', color: "red", position: "absolute", bottom: '100%', left: '-20px' }} />
+        style={{ width: '20px', height: '40px', color: "red", position: "absolute", bottom: '100%', left: '-20px' }} />
 )}
     </>
        

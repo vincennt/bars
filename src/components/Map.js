@@ -25,7 +25,9 @@ const Map =()=>{
             defaultCenter={userLocation.location}
             defaultZoom={18}
             >
-                <Marker/>
+            <Marker
+          
+            />
             </GoogleMapReact>         
         </MapContainer>
        
